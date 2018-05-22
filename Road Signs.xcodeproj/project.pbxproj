@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341BC9AE2090950A00ED7FA8 /* SignsValueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BC9AD2090950A00ED7FA8 /* SignsValueTest.swift */; };
+		341BCA1A2098457000ED7FA8 /* KnownSignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BCA192098457000ED7FA8 /* KnownSignsViewController.swift */; };
+		341BCA1C2098488A00ED7FA8 /* KnownSignsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BCA1B2098488A00ED7FA8 /* KnownSignsCollectionViewCell.swift */; };
+		341BCA1F2098561900ED7FA8 /* KnownSignsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BCA1E2098561900ED7FA8 /* KnownSignsCollectionReusableView.swift */; };
+		34697EC5206399EE00250A96 /* SignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34697EC4206399EE00250A96 /* SignTests.swift */; };
+		348F4F14207255DA008DB7FD /* TheoryDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F10207255DA008DB7FD /* TheoryDetailsTableViewCell.swift */; };
+		348F4F15207255DA008DB7FD /* TheoryDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F11207255DA008DB7FD /* TheoryDetailsTableViewController.swift */; };
+		348F4F16207255DA008DB7FD /* TheoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F12207255DA008DB7FD /* TheoryTableViewCell.swift */; };
+		348F4F17207255DA008DB7FD /* TheoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F13207255DA008DB7FD /* TheoryTableViewController.swift */; };
+		348F4F19207255E6008DB7FD /* NameTrainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F18207255E6008DB7FD /* NameTrainerViewController.swift */; };
+		348F4F1B207255F2008DB7FD /* QustionsTrainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F1A207255F2008DB7FD /* QustionsTrainerViewController.swift */; };
+		348F4F1D2072709C008DB7FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F1C2072709C008DB7FD /* Images.xcassets */; };
+		348F4F27207270B3008DB7FD /* HorizontalMarkup.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F1E207270B3008DB7FD /* HorizontalMarkup.json */; };
+		348F4F28207270B3008DB7FD /* InformationSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F1F207270B3008DB7FD /* InformationSigns.json */; };
+		348F4F29207270B3008DB7FD /* OrderSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F20207270B3008DB7FD /* OrderSigns.json */; };
+		348F4F2A207270B3008DB7FD /* PrioritySigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F21207270B3008DB7FD /* PrioritySigns.json */; };
+		348F4F2B207270B3008DB7FD /* ProhibitionSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F22207270B3008DB7FD /* ProhibitionSigns.json */; };
+		348F4F2C207270B3008DB7FD /* ServiceSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F23207270B3008DB7FD /* ServiceSigns.json */; };
+		348F4F2D207270B3008DB7FD /* TabletsForRoadSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F24207270B3008DB7FD /* TabletsForRoadSigns.json */; };
+		348F4F2E207270B3008DB7FD /* VerticalMarcup.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F25207270B3008DB7FD /* VerticalMarcup.json */; };
+		348F4F2F207270B3008DB7FD /* WarningSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F26207270B3008DB7FD /* WarningSigns.json */; };
+		348F4F37207270C7008DB7FD /* InformationSignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F30207270C7008DB7FD /* InformationSignsTest.json */; };
+		348F4F38207270C7008DB7FD /* OrderSignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F31207270C7008DB7FD /* OrderSignsTest.json */; };
+		348F4F39207270C7008DB7FD /* PrioritySignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F32207270C7008DB7FD /* PrioritySignsTest.json */; };
+		348F4F3A207270C7008DB7FD /* ProhibitionSignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F33207270C7008DB7FD /* ProhibitionSignsTest.json */; };
+		348F4F3B207270C7008DB7FD /* ServiceSignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F34207270C7008DB7FD /* ServiceSignsTest.json */; };
+		348F4F3C207270C7008DB7FD /* TabletsForRoadSignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F35207270C7008DB7FD /* TabletsForRoadSignsTest.json */; };
+		348F4F3D207270C7008DB7FD /* WarningSignsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F4F36207270C7008DB7FD /* WarningSignsTest.json */; };
+		348F4F412074F77D008DB7FD /* SignsNamesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F4F402074F77D008DB7FD /* SignsNamesTest.swift */; };
+		34CE804820AD66DA0002F553 /* ChatTutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE804720AD66DA0002F553 /* ChatTutorialCollectionViewController.swift */; };
+		34CE804A20AD73460002F553 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE804920AD73460002F553 /* Message.swift */; };
+		34E293FF2052C6840046CD0A /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E293FE2052C6840046CD0A /* Sign.swift */; };
+		C125325F2006627700BBBAC1 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C125325E2006627700BBBAC1 /* AppData.swift */; };
+		C1253261200664E900BBBAC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1253260200664E900BBBAC1 /* AppDelegate.swift */; };
+		C12532632006679B00BBBAC1 /* SelectTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12532622006679B00BBBAC1 /* SelectTrainingViewController.swift */; };
+		C1A2D1A920064BBA007ECE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A2D1A720064BBA007ECE07 /* Main.storyboard */; };
+		C1A2D1AB20064BBA007ECE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A2D1AA20064BBA007ECE07 /* Assets.xcassets */; };
+		C1A2D1AE20064BBA007ECE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A2D1AC20064BBA007ECE07 /* LaunchScreen.storyboard */; };
+		C1A2D1B920064BBA007ECE07 /* Road_SignsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2D1B820064BBA007ECE07 /* Road_SignsTests.swift */; };
+		C1A2D1C420064BBA007ECE07 /* Road_SignsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2D1C320064BBA007ECE07 /* Road_SignsUITests.swift */; };
+		C1A2D1D720064FE0007ECE07 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2D1D620064FE0007ECE07 /* MenuViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1A2D1B520064BBA007ECE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1A2D19820064BBA007ECE07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1A2D19F20064BBA007ECE07;
+			remoteInfo = "Road Signs";
+		};
+		C1A2D1C020064BBA007ECE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1A2D19820064BBA007ECE07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1A2D19F20064BBA007ECE07;
+			remoteInfo = "Road Signs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		341BC9AD2090950A00ED7FA8 /* SignsValueTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsValueTest.swift; sourceTree = "<group>"; };
+		341BCA192098457000ED7FA8 /* KnownSignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownSignsViewController.swift; sourceTree = "<group>"; };
+		341BCA1B2098488A00ED7FA8 /* KnownSignsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownSignsCollectionViewCell.swift; sourceTree = "<group>"; };
+		341BCA1E2098561900ED7FA8 /* KnownSignsCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownSignsCollectionReusableView.swift; sourceTree = "<group>"; };
+		34697EC4206399EE00250A96 /* SignTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignTests.swift; sourceTree = "<group>"; };
+		348F4F10207255DA008DB7FD /* TheoryDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheoryDetailsTableViewCell.swift; path = "Theory controllers/TheoryDetailsTableViewCell.swift"; sourceTree = "<group>"; };
+		348F4F11207255DA008DB7FD /* TheoryDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheoryDetailsTableViewController.swift; path = "Theory controllers/TheoryDetailsTableViewController.swift"; sourceTree = "<group>"; };
+		348F4F12207255DA008DB7FD /* TheoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheoryTableViewCell.swift; path = "Theory controllers/TheoryTableViewCell.swift"; sourceTree = "<group>"; };
+		348F4F13207255DA008DB7FD /* TheoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheoryTableViewController.swift; path = "Theory controllers/TheoryTableViewController.swift"; sourceTree = "<group>"; };
+		348F4F18207255E6008DB7FD /* NameTrainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameTrainerViewController.swift; path = "Name Trainer controllers/NameTrainerViewController.swift"; sourceTree = "<group>"; };
+		348F4F1A207255F2008DB7FD /* QustionsTrainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QustionsTrainerViewController.swift; path = "Questions Trainer controllers/QustionsTrainerViewController.swift"; sourceTree = "<group>"; };
+		348F4F1C2072709C008DB7FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		348F4F1E207270B3008DB7FD /* HorizontalMarkup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HorizontalMarkup.json; sourceTree = "<group>"; };
+		348F4F1F207270B3008DB7FD /* InformationSigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSigns.json; sourceTree = "<group>"; };
+		348F4F20207270B3008DB7FD /* OrderSigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrderSigns.json; sourceTree = "<group>"; };
+		348F4F21207270B3008DB7FD /* PrioritySigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PrioritySigns.json; sourceTree = "<group>"; };
+		348F4F22207270B3008DB7FD /* ProhibitionSigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProhibitionSigns.json; sourceTree = "<group>"; };
+		348F4F23207270B3008DB7FD /* ServiceSigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServiceSigns.json; sourceTree = "<group>"; };
+		348F4F24207270B3008DB7FD /* TabletsForRoadSigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TabletsForRoadSigns.json; sourceTree = "<group>"; };
+		348F4F25207270B3008DB7FD /* VerticalMarcup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VerticalMarcup.json; sourceTree = "<group>"; };
+		348F4F26207270B3008DB7FD /* WarningSigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WarningSigns.json; sourceTree = "<group>"; };
+		348F4F30207270C7008DB7FD /* InformationSignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSignsTest.json; sourceTree = "<group>"; };
+		348F4F31207270C7008DB7FD /* OrderSignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrderSignsTest.json; sourceTree = "<group>"; };
+		348F4F32207270C7008DB7FD /* PrioritySignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PrioritySignsTest.json; sourceTree = "<group>"; };
+		348F4F33207270C7008DB7FD /* ProhibitionSignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProhibitionSignsTest.json; sourceTree = "<group>"; };
+		348F4F34207270C7008DB7FD /* ServiceSignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServiceSignsTest.json; sourceTree = "<group>"; };
+		348F4F35207270C7008DB7FD /* TabletsForRoadSignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TabletsForRoadSignsTest.json; sourceTree = "<group>"; };
+		348F4F36207270C7008DB7FD /* WarningSignsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WarningSignsTest.json; sourceTree = "<group>"; };
+		348F4F402074F77D008DB7FD /* SignsNamesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsNamesTest.swift; sourceTree = "<group>"; };
+		34CE804720AD66DA0002F553 /* ChatTutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTutorialCollectionViewController.swift; sourceTree = "<group>"; };
+		34CE804920AD73460002F553 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		34E293FE2052C6840046CD0A /* Sign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		C125325E2006627700BBBAC1 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		C1253260200664E900BBBAC1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C12532622006679B00BBBAC1 /* SelectTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTrainingViewController.swift; sourceTree = "<group>"; };
+		C1A2D1A020064BBA007ECE07 /* Road Signs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Signs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A2D1A820064BBA007ECE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1A2D1AA20064BBA007ECE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1A2D1AD20064BBA007ECE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1A2D1AF20064BBA007ECE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A2D1B420064BBA007ECE07 /* Road SignsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Road SignsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A2D1B820064BBA007ECE07 /* Road_SignsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road_SignsTests.swift; sourceTree = "<group>"; };
+		C1A2D1BA20064BBA007ECE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A2D1BF20064BBA007ECE07 /* Road SignsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Road SignsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A2D1C320064BBA007ECE07 /* Road_SignsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road_SignsUITests.swift; sourceTree = "<group>"; };
+		C1A2D1C520064BBA007ECE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A2D1D620064FE0007ECE07 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1A2D19D20064BBA007ECE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A2D1B120064BBA007ECE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A2D1BC20064BBA007ECE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		341BCA1D2098488F00ED7FA8 /* Known Signs Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				341BCA192098457000ED7FA8 /* KnownSignsViewController.swift */,
+				341BCA1B2098488A00ED7FA8 /* KnownSignsCollectionViewCell.swift */,
+				341BCA1E2098561900ED7FA8 /* KnownSignsCollectionReusableView.swift */,
+			);
+			name = "Known Signs Controllers";
+			sourceTree = "<group>";
+		};
+		34697EC620639A9D00250A96 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				348F4F30207270C7008DB7FD /* InformationSignsTest.json */,
+				348F4F31207270C7008DB7FD /* OrderSignsTest.json */,
+				348F4F32207270C7008DB7FD /* PrioritySignsTest.json */,
+				348F4F33207270C7008DB7FD /* ProhibitionSignsTest.json */,
+				348F4F34207270C7008DB7FD /* ServiceSignsTest.json */,
+				348F4F35207270C7008DB7FD /* TabletsForRoadSignsTest.json */,
+				348F4F36207270C7008DB7FD /* WarningSignsTest.json */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		34697EC720639AA800250A96 /* Theory */ = {
+			isa = PBXGroup;
+			children = (
+				348F4F1E207270B3008DB7FD /* HorizontalMarkup.json */,
+				348F4F1F207270B3008DB7FD /* InformationSigns.json */,
+				348F4F20207270B3008DB7FD /* OrderSigns.json */,
+				348F4F21207270B3008DB7FD /* PrioritySigns.json */,
+				348F4F22207270B3008DB7FD /* ProhibitionSigns.json */,
+				348F4F23207270B3008DB7FD /* ServiceSigns.json */,
+				348F4F24207270B3008DB7FD /* TabletsForRoadSigns.json */,
+				348F4F25207270B3008DB7FD /* VerticalMarcup.json */,
+				348F4F26207270B3008DB7FD /* WarningSigns.json */,
+			);
+			name = Theory;
+			sourceTree = "<group>";
+		};
+		34697EC820639E9A00250A96 /* Questions Trainer controllers */ = {
+			isa = PBXGroup;
+			children = (
+				348F4F1A207255F2008DB7FD /* QustionsTrainerViewController.swift */,
+			);
+			name = "Questions Trainer controllers";
+			sourceTree = "<group>";
+		};
+		346BBC6320A9D3E300D625C3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				34CE804720AD66DA0002F553 /* ChatTutorialCollectionViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		34D9AFF92057BFC500B9F402 /* Name Trainer controllers */ = {
+			isa = PBXGroup;
+			children = (
+				348F4F18207255E6008DB7FD /* NameTrainerViewController.swift */,
+			);
+			name = "Name Trainer controllers";
+			sourceTree = "<group>";
+		};
+		34E293F5205294B80046CD0A /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				34E293F7205294D60046CD0A /* Images */,
+				34E293F6205294CF0046CD0A /* Data */,
+			);
+			name = Resourses;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		34E293F6205294CF0046CD0A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				34697EC720639AA800250A96 /* Theory */,
+				34697EC620639A9D00250A96 /* Tests */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		34E293F7205294D60046CD0A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				348F4F1C2072709C008DB7FD /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		34E294022052D6440046CD0A /* Theory controllers */ = {
+			isa = PBXGroup;
+			children = (
+				348F4F10207255DA008DB7FD /* TheoryDetailsTableViewCell.swift */,
+				348F4F11207255DA008DB7FD /* TheoryDetailsTableViewController.swift */,
+				348F4F12207255DA008DB7FD /* TheoryTableViewCell.swift */,
+				348F4F13207255DA008DB7FD /* TheoryTableViewController.swift */,
+			);
+			name = "Theory controllers";
+			sourceTree = "<group>";
+		};
+		C1A2D19720064BBA007ECE07 = {
+			isa = PBXGroup;
+			children = (
+				C1A2D1A220064BBA007ECE07 /* Road Signs */,
+				C1A2D1B720064BBA007ECE07 /* Road SignsTests */,
+				C1A2D1C220064BBA007ECE07 /* Road SignsUITests */,
+				C1A2D1A120064BBA007ECE07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1A2D1A120064BBA007ECE07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2D1A020064BBA007ECE07 /* Road Signs.app */,
+				C1A2D1B420064BBA007ECE07 /* Road SignsTests.xctest */,
+				C1A2D1BF20064BBA007ECE07 /* Road SignsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1A2D1A220064BBA007ECE07 /* Road Signs */ = {
+			isa = PBXGroup;
+			children = (
+				34E293F5205294B80046CD0A /* Resourses */,
+				C1A2D1D120064F47007ECE07 /* Classes */,
+				C1A2D1A720064BBA007ECE07 /* Main.storyboard */,
+				C1A2D1AA20064BBA007ECE07 /* Assets.xcassets */,
+				C1A2D1AC20064BBA007ECE07 /* LaunchScreen.storyboard */,
+				C1A2D1AF20064BBA007ECE07 /* Info.plist */,
+			);
+			path = "Road Signs";
+			sourceTree = "<group>";
+		};
+		C1A2D1B720064BBA007ECE07 /* Road SignsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2D1B820064BBA007ECE07 /* Road_SignsTests.swift */,
+				C1A2D1BA20064BBA007ECE07 /* Info.plist */,
+			);
+			path = "Road SignsTests";
+			sourceTree = "<group>";
+		};
+		C1A2D1C220064BBA007ECE07 /* Road SignsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2D1C320064BBA007ECE07 /* Road_SignsUITests.swift */,
+				C1A2D1C520064BBA007ECE07 /* Info.plist */,
+			);
+			path = "Road SignsUITests";
+			sourceTree = "<group>";
+		};
+		C1A2D1D120064F47007ECE07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2D1D520064F54007ECE07 /* Application */,
+				C1A2D1D420064F47007ECE07 /* Data */,
+				C1A2D1D320064F47007ECE07 /* Model */,
+				C1A2D1D220064F47007ECE07 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C1A2D1D220064F47007ECE07 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				346BBC6320A9D3E300D625C3 /* Chat */,
+				C1A2D1D620064FE0007ECE07 /* MenuViewController.swift */,
+				C12532622006679B00BBBAC1 /* SelectTrainingViewController.swift */,
+				34E294022052D6440046CD0A /* Theory controllers */,
+				34D9AFF92057BFC500B9F402 /* Name Trainer controllers */,
+				34697EC820639E9A00250A96 /* Questions Trainer controllers */,
+				341BCA1D2098488F00ED7FA8 /* Known Signs Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C1A2D1D320064F47007ECE07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34E293FE2052C6840046CD0A /* Sign.swift */,
+				34697EC4206399EE00250A96 /* SignTests.swift */,
+				348F4F402074F77D008DB7FD /* SignsNamesTest.swift */,
+				341BC9AD2090950A00ED7FA8 /* SignsValueTest.swift */,
+				34CE804920AD73460002F553 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1A2D1D420064F47007ECE07 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C125325E2006627700BBBAC1 /* AppData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C1A2D1D520064F54007ECE07 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C1253260200664E900BBBAC1 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1A2D19F20064BBA007ECE07 /* Road Signs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A2D1C820064BBB007ECE07 /* Build configuration list for PBXNativeTarget "Road Signs" */;
+			buildPhases = (
+				C1A2D19C20064BBA007ECE07 /* Sources */,
+				C1A2D19D20064BBA007ECE07 /* Frameworks */,
+				C1A2D19E20064BBA007ECE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Road Signs";
+			productName = "Road Signs";
+			productReference = C1A2D1A020064BBA007ECE07 /* Road Signs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1A2D1B320064BBA007ECE07 /* Road SignsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A2D1CB20064BBB007ECE07 /* Build configuration list for PBXNativeTarget "Road SignsTests" */;
+			buildPhases = (
+				C1A2D1B020064BBA007ECE07 /* Sources */,
+				C1A2D1B120064BBA007ECE07 /* Frameworks */,
+				C1A2D1B220064BBA007ECE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1A2D1B620064BBA007ECE07 /* PBXTargetDependency */,
+			);
+			name = "Road SignsTests";
+			productName = "Road SignsTests";
+			productReference = C1A2D1B420064BBA007ECE07 /* Road SignsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1A2D1BE20064BBA007ECE07 /* Road SignsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A2D1CE20064BBB007ECE07 /* Build configuration list for PBXNativeTarget "Road SignsUITests" */;
+			buildPhases = (
+				C1A2D1BB20064BBA007ECE07 /* Sources */,
+				C1A2D1BC20064BBA007ECE07 /* Frameworks */,
+				C1A2D1BD20064BBA007ECE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1A2D1C120064BBA007ECE07 /* PBXTargetDependency */,
+			);
+			name = "Road SignsUITests";
+			productName = "Road SignsUITests";
+			productReference = C1A2D1BF20064BBA007ECE07 /* Road SignsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1A2D19820064BBA007ECE07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Artyom Savelyev";
+				TargetAttributes = {
+					C1A2D19F20064BBA007ECE07 = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					C1A2D1B320064BBA007ECE07 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1A2D19F20064BBA007ECE07;
+					};
+					C1A2D1BE20064BBA007ECE07 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1A2D19F20064BBA007ECE07;
+					};
+				};
+			};
+			buildConfigurationList = C1A2D19B20064BBA007ECE07 /* Build configuration list for PBXProject "Road Signs" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1A2D19720064BBA007ECE07;
+			productRefGroup = C1A2D1A120064BBA007ECE07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1A2D19F20064BBA007ECE07 /* Road Signs */,
+				C1A2D1B320064BBA007ECE07 /* Road SignsTests */,
+				C1A2D1BE20064BBA007ECE07 /* Road SignsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1A2D19E20064BBA007ECE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348F4F2D207270B3008DB7FD /* TabletsForRoadSigns.json in Resources */,
+				348F4F2A207270B3008DB7FD /* PrioritySigns.json in Resources */,
+				C1A2D1AE20064BBA007ECE07 /* LaunchScreen.storyboard in Resources */,
+				348F4F28207270B3008DB7FD /* InformationSigns.json in Resources */,
+				348F4F2C207270B3008DB7FD /* ServiceSigns.json in Resources */,
+				348F4F3C207270C7008DB7FD /* TabletsForRoadSignsTest.json in Resources */,
+				348F4F3B207270C7008DB7FD /* ServiceSignsTest.json in Resources */,
+				C1A2D1AB20064BBA007ECE07 /* Assets.xcassets in Resources */,
+				348F4F39207270C7008DB7FD /* PrioritySignsTest.json in Resources */,
+				348F4F1D2072709C008DB7FD /* Images.xcassets in Resources */,
+				348F4F2E207270B3008DB7FD /* VerticalMarcup.json in Resources */,
+				348F4F3D207270C7008DB7FD /* WarningSignsTest.json in Resources */,
+				348F4F29207270B3008DB7FD /* OrderSigns.json in Resources */,
+				348F4F27207270B3008DB7FD /* HorizontalMarkup.json in Resources */,
+				C1A2D1A920064BBA007ECE07 /* Main.storyboard in Resources */,
+				348F4F2F207270B3008DB7FD /* WarningSigns.json in Resources */,
+				348F4F2B207270B3008DB7FD /* ProhibitionSigns.json in Resources */,
+				348F4F3A207270C7008DB7FD /* ProhibitionSignsTest.json in Resources */,
+				348F4F37207270C7008DB7FD /* InformationSignsTest.json in Resources */,
+				348F4F38207270C7008DB7FD /* OrderSignsTest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A2D1B220064BBA007ECE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A2D1BD20064BBA007ECE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1A2D19C20064BBA007ECE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CE804820AD66DA0002F553 /* ChatTutorialCollectionViewController.swift in Sources */,
+				348F4F14207255DA008DB7FD /* TheoryDetailsTableViewCell.swift in Sources */,
+				348F4F412074F77D008DB7FD /* SignsNamesTest.swift in Sources */,
+				348F4F19207255E6008DB7FD /* NameTrainerViewController.swift in Sources */,
+				348F4F15207255DA008DB7FD /* TheoryDetailsTableViewController.swift in Sources */,
+				34CE804A20AD73460002F553 /* Message.swift in Sources */,
+				341BCA1A2098457000ED7FA8 /* KnownSignsViewController.swift in Sources */,
+				C12532632006679B00BBBAC1 /* SelectTrainingViewController.swift in Sources */,
+				341BCA1F2098561900ED7FA8 /* KnownSignsCollectionReusableView.swift in Sources */,
+				348F4F17207255DA008DB7FD /* TheoryTableViewController.swift in Sources */,
+				341BC9AE2090950A00ED7FA8 /* SignsValueTest.swift in Sources */,
+				C1253261200664E900BBBAC1 /* AppDelegate.swift in Sources */,
+				341BCA1C2098488A00ED7FA8 /* KnownSignsCollectionViewCell.swift in Sources */,
+				348F4F1B207255F2008DB7FD /* QustionsTrainerViewController.swift in Sources */,
+				34697EC5206399EE00250A96 /* SignTests.swift in Sources */,
+				348F4F16207255DA008DB7FD /* TheoryTableViewCell.swift in Sources */,
+				34E293FF2052C6840046CD0A /* Sign.swift in Sources */,
+				C1A2D1D720064FE0007ECE07 /* MenuViewController.swift in Sources */,
+				C125325F2006627700BBBAC1 /* AppData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A2D1B020064BBA007ECE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A2D1B920064BBA007ECE07 /* Road_SignsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A2D1BB20064BBA007ECE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A2D1C420064BBA007ECE07 /* Road_SignsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1A2D1B620064BBA007ECE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1A2D19F20064BBA007ECE07 /* Road Signs */;
+			targetProxy = C1A2D1B520064BBA007ECE07 /* PBXContainerItemProxy */;
+		};
+		C1A2D1C120064BBA007ECE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1A2D19F20064BBA007ECE07 /* Road Signs */;
+			targetProxy = C1A2D1C020064BBA007ECE07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1A2D1A720064BBA007ECE07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A2D1A820064BBA007ECE07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1A2D1AC20064BBA007ECE07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A2D1AD20064BBA007ECE07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1A2D1C620064BBB007ECE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C1A2D1C720064BBB007ECE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1A2D1C920064BBB007ECE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Road Signs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savelyev.programmer.Road-Signs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1A2D1CA20064BBB007ECE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Road Signs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savelyev.programmer.Road-Signs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1A2D1CC20064BBB007ECE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Road SignsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savelyev.programmer.Road-SignsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Road Signs.app/Road Signs";
+			};
+			name = Debug;
+		};
+		C1A2D1CD20064BBB007ECE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Road SignsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savelyev.programmer.Road-SignsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Road Signs.app/Road Signs";
+			};
+			name = Release;
+		};
+		C1A2D1CF20064BBB007ECE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Road SignsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savelyev.programmer.Road-SignsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Road Signs";
+			};
+			name = Debug;
+		};
+		C1A2D1D020064BBB007ECE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Road SignsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savelyev.programmer.Road-SignsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Road Signs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1A2D19B20064BBA007ECE07 /* Build configuration list for PBXProject "Road Signs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A2D1C620064BBB007ECE07 /* Debug */,
+				C1A2D1C720064BBB007ECE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A2D1C820064BBB007ECE07 /* Build configuration list for PBXNativeTarget "Road Signs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A2D1C920064BBB007ECE07 /* Debug */,
+				C1A2D1CA20064BBB007ECE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A2D1CB20064BBB007ECE07 /* Build configuration list for PBXNativeTarget "Road SignsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A2D1CC20064BBB007ECE07 /* Debug */,
+				C1A2D1CD20064BBB007ECE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A2D1CE20064BBB007ECE07 /* Build configuration list for PBXNativeTarget "Road SignsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A2D1CF20064BBB007ECE07 /* Debug */,
+				C1A2D1D020064BBB007ECE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1A2D19820064BBA007ECE07 /* Project object */;
+}
